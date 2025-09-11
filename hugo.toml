@@ -1,0 +1,16 @@
+baseURL = "https://fantatchi.xyz.pages.dev/"
+title = "fantatchi.xyz"
+theme = "PaperMod"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
