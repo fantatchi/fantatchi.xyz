@@ -8,9 +8,47 @@ enableRobotsTXT = true
 [pagination]
   pagerSize = 10
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   env = "production"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
+  ShowShareButtons = true
+  ShowPageNums = true
+  # Home に表示するセクション（posts のみを表示）
+  mainSections = ["posts"]
+
+# Home-Info Mode 設定
+[params.homeInfoParams]
+  Title = "ようこそ 👋"
+  Content = """
+fantatchi.xyz へようこそ。
+ここにサイトの紹介や案内リンクなどを記載できます。
+"""
+  # ソーシャルアイコンの配置（left/center/right）
+  AlignSocialIconsTo = "left"
+
+# 任意：ソーシャルアイコンを表示する場合は以下を有効化して編集
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/fantatchi"
+# [[params.socialIcons]]
+#   name = "x"
+#   url = "https://x.com/yourname"
+
+# 投稿のシェア先（必要に応じて調整）
+ShareButtons = ["x","facebook","linkedin","whatsapp","telegram","reddit"]
+
+[menu]
+  [[menu.main]]
+    name = "アーカイブ"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    name = "検索"
+    url = "/search/"
+    weight = 30

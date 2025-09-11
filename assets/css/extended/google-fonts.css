@@ -1,0 +1,17 @@
+/* Google Fonts を読み込み（Noto Sans JP）*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap');
+
+/* 本文と見出しのフォントを上書き */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic UI', 'YuGothic', 'Meiryo', sans-serif;
+}
+
+/* 字間と可読性を微調整（日本語向け） */
+body { letter-spacing: 0.02em; }
+h1, h2, h3 { letter-spacing: 0.01em; }
