@@ -43,12 +43,28 @@ fantatchi.xyz へようこそ。
 # 投稿のシェア先（必要に応じて調整）
 ShareButtons = ["x","facebook","linkedin","whatsapp","telegram","reddit"]
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [menu]
+  [[menu.main]]
+    name = "カテゴリ"
+    url  = "/categories/"
+    weight = 10
+
+  [[menu.main]]
+    name = "タグ"
+    url  = "/tags/"
+    weight = 20
+
   [[menu.main]]
     name = "アーカイブ"
     url = "/archives/"
-    weight = 20
+    weight = 30
+
   [[menu.main]]
     name = "検索"
     url = "/search/"
-    weight = 30
+    weight = 40
+
