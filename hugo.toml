@@ -1,5 +1,5 @@
 baseURL = "https://fantatchi-xyz.pages.dev/"
-title = "fantatchi.xyz"
+title = "fantatchi's notes"
 theme = "PaperMod"
 languageCode = "ja"
 defaultContentLanguage = "ja"
@@ -17,31 +17,28 @@ enableRobotsTXT = true
   ShowReadingTime = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
-  ShowShareButtons = true
   ShowPageNums = true
-  # Home に表示するセクション（posts のみを表示）
-  mainSections = ["posts"]
+  ShowToc = true
+  ShowShareButtons = true
+  ShareButtons = ["x","facebook","linkedin"]
 
-# Home-Info Mode 設定
-[params.homeInfoParams]
-  Title = "ようこそ 👋"
-  Content = """
-fantatchi.xyz へようこそ。
-ここにサイトの紹介や案内リンクなどを記載できます。
-"""
-  # ソーシャルアイコンの配置（left/center/right）
-  AlignSocialIconsTo = "left"
+  [params.profileMode]
+    enabled = true
+    title = "fantatchi's notes"
+    subtitle = "日常スケッチ - 日々の小さな気づきから"
+    imageUrl = "/images/avatar.png"
+    imageTitle = "avatar"
 
-# 任意：ソーシャルアイコンを表示する場合は以下を有効化して編集
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/fantatchi"
-# [[params.socialIcons]]
-#   name = "x"
-#   url = "https://x.com/yourname"
+    [[params.profileMode.buttons]]
+      name = "アーカイブ"
+      url = "/archives"
 
-# 投稿のシェア先（必要に応じて調整）
-ShareButtons = ["x","facebook","linkedin","whatsapp","telegram","reddit"]
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/fantatchi"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/fantatchi"
 
 [taxonomies]
   tag = "tags"
@@ -57,11 +54,6 @@ ShareButtons = ["x","facebook","linkedin","whatsapp","telegram","reddit"]
     name = "タグ"
     url  = "/tags/"
     weight = 20
-
-  [[menu.main]]
-    name = "アーカイブ"
-    url = "/archives/"
-    weight = 30
 
   [[menu.main]]
     name = "検索"
