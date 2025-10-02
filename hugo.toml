@@ -20,6 +20,7 @@ enableRobotsTXT = true
   ShowPageNums = true
   ShowToc = true
   ShowShareButtons = true
+  ShowCodeCopyButtons = true
   ShareButtons = ["x","facebook","linkedin"]
 
   [params.profileMode]
