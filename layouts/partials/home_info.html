@@ -1,9 +1,9 @@
 {{- with site.Params.homeInfoParams }}
-<article class="first-entry home-info">
+<article class="first-entry home-info" style="text-align: center;">
     {{- with .imageUrl }}
-    <figure class="entry-cover" style="text-align: center;">
-        <img src="{{ . }}" alt="{{ site.Params.homeInfoParams.imageTitle | default "avatar" }}"
-            style="border-radius: 50%; max-width: 120px;" />
+    <figure style="display: flex; justify-content: center; margin: 0 0 1em;">
+        <img src="{{ . | absURL }}" alt="{{ site.Params.homeInfoParams.imageTitle | default "avatar" }}"
+            style="border-radius: 50%; width: 150px; height: 150px;" />
     </figure>
     {{- end }}
     <header class="entry-header">
@@ -13,7 +13,7 @@
         {{ .Content | markdownify }}
     </div>
     <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+        {{ partial "social_icons.html" (dict "align" "center") }}
     </footer>
 </article>
 {{- end -}}
