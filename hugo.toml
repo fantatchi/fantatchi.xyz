@@ -23,16 +23,11 @@ enableRobotsTXT = true
   ShowCodeCopyButtons = true
   ShareButtons = ["x","facebook","linkedin"]
 
-  [params.profileMode]
-    enabled = true
-    title = "fantatchi's notes"
-    subtitle = "日常スケッチ - 日々の小さな気づきから"
+  [params.homeInfoParams]
+    Title = "fantatchi's notes"
+    Content = "日常スケッチ - 日々の小さな気づきから"
     imageUrl = "/images/avatar.png"
     imageTitle = "avatar"
-
-    [[params.profileMode.buttons]]
-      name = "アーカイブ"
-      url = "/archives"
 
   [[params.socialIcons]]
     name = "x"
@@ -55,6 +50,11 @@ enableRobotsTXT = true
     name = "タグ"
     url  = "/tags/"
     weight = 20
+
+  [[menu.main]]
+    name = "アーカイブ"
+    url = "/archives/"
+    weight = 30
 
   [[menu.main]]
     name = "検索"
