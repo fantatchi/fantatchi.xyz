@@ -1,0 +1,9 @@
+/* 記事本文の文字サイズと行間を日本語向けに調整（PaperMod 既定: 18px / 1.6） */
+.post-content {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* 記事内見出し（PaperMod 既定: h2 32px / h3 24px） */
+.post-content h2 { font-size: 24px; }
+.post-content h3 { font-size: 20px; }
