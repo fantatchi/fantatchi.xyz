@@ -1,0 +1,97 @@
+/* 配色: モノトーン＋アクセント 1 色（藍）。変数名は PaperMod の core/theme-vars.css に合わせる */
+:root {
+  --theme: #ffffff;
+  --entry: #ffffff;
+  --primary: #222222;
+  --secondary: #6b6b6b;
+  --tertiary: #e8e8e8;
+  --content: #222222;
+  --code-bg: #f4f4f3;
+  --border: #e8e8e8;
+  --accent: #2b5b84;
+}
+
+.dark {
+  --theme: #18191b;
+  --entry: #18191b;
+  --primary: #e0e0e0;
+  --secondary: #9a9a9a;
+  --tertiary: #2e2f31;
+  --content: #d4d4d4;
+  --code-bg: #26272a;
+  --border: #2e2f31;
+  --accent: #7fa8cc;
+}
+
+/* 一覧ページだけ灰色になる背景をやめ、全ページ同じ背景に */
+.list,
+.dark.list {
+  background: var(--theme);
+}
+
+/* ヘッダー */
+.logo a {
+  font-size: 18px;
+  font-weight: 600;
+}
+#menu a { font-size: 15px; }
+#menu a:hover { color: var(--accent); }
+#menu .active {
+  font-weight: inherit;
+  border-bottom: 1px solid var(--accent);
+}
+
+/* トップ */
+.first-entry {
+  min-height: auto;
+  margin: calc(var(--gap) * 2) 0 0;
+}
+
+/* 記事一覧: カードをやめて下罫線で区切るリストに */
+.post-entry {
+  margin-bottom: 0;
+  padding: var(--gap) 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  transition: none;
+}
+.post-entry:active { transform: none; }
+.post-entry:hover .entry-header h2 { color: var(--accent); }
+.first-entry.home-info { border-bottom: 1px solid var(--border); padding-bottom: calc(var(--gap) * 2); }
+
+/* 記事本文 */
+.post-content a {
+  color: var(--accent);
+  box-shadow: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.post-content blockquote {
+  color: var(--secondary);
+  border-inline-start: 2px solid var(--border);
+}
+.post-content code {
+  border-radius: 4px;
+}
+.toc,
+.dark .toc {
+  background: none;
+}
+.toc a:hover {
+  color: var(--accent);
+  box-shadow: none;
+}
+
+/* ページ送り: 黒塗りの丸ボタンを枠線のみに */
+.pagination a {
+  color: var(--primary);
+  background: none;
+  border: 1px solid var(--border);
+}
+.pagination a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}

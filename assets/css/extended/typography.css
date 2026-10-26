@@ -20,3 +20,8 @@
   font-size: 20px;
   line-height: 1.4;
 }
+
+/* スマホ幅では記事タイトルが 4 行に折り返すため小さくする */
+@media (max-width: 600px) {
+  .post-title { font-size: 26px; }
+}
