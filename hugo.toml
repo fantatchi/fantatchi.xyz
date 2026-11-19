@@ -6,6 +6,8 @@ defaultContentLanguage = "ja"
 enableRobotsTXT = true
 # 日本語を文字単位で数える（読了時間・抜粋の長さが正しくなる）
 hasCJKLanguage = true
+# タグ・カテゴリ名を先頭大文字にせず、書いたとおりに表示する
+capitalizeListTitles = false
 
 [pagination]
   pagerSize = 10
