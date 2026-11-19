@@ -25,3 +25,18 @@
 @media (max-width: 600px) {
   .post-title { font-size: 26px; }
 }
+
+/* 1 行を約 38 字にする（本文幅 = main-width - 左右 24px。PaperMod 既定 720px だと約 42 字） */
+:root { --main-width: 656px; }
+
+/* 行間 1.9 の本文に埋もれないよう、記事内見出しの上を広めに（PaperMod 既定: h2 32px / h3 24px） */
+.post-content h2 { margin-top: 48px; }
+.post-content h3 { margin-top: 32px; }
+
+/* タイトルは括弧や句読点の全角アキを詰める（記事内見出し・本文は読点が詰まりすぎるので対象外） */
+.post-title,
+.page-header h1,
+.entry-header h2 {
+  font-feature-settings: "palt";
+  letter-spacing: 0.04em;
+}

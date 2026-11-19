@@ -4,6 +4,8 @@ theme = "PaperMod"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 enableRobotsTXT = true
+# 日本語を文字単位で数える（読了時間・抜粋の長さが正しくなる）
+hasCJKLanguage = true
 
 [pagination]
   pagerSize = 10
@@ -14,6 +16,7 @@ enableRobotsTXT = true
 [params]
   env = "production"
   defaultTheme = "auto"
+  DateFormat = "2006年1月2日"
   ShowReadingTime = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
