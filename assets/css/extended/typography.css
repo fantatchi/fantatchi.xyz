@@ -40,3 +40,11 @@
   font-feature-settings: "palt";
   letter-spacing: 0.04em;
 }
+
+/* 記事下の前後記事リンク。本文の外なので PaperMod の body 既定 18px のままになり、半幅で 3 行に折り返していた */
+.paginav {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.paginav a { padding-block: 10px; }
+.paginav .title { font-size: 12px; }
