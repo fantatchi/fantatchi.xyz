@@ -5,6 +5,7 @@ draft: false
 tags: ["claude-code", "claude-md", "memory", "skills", "maintenance"]
 categories: ["devtools"]
 qiita_tags: ["ClaudeCode", "Claude", "AI", "生成AI", "AIエージェント"]
+qiita_id: "dd69dc0d479422ca0c04"
 ---
 
 Claude Code は、使い込むほど「自分専用」に育っていく AI だ。いつも守ってほしいことを書いておく指示書（CLAUDE.md）、会話をまたいで Claude が自分で残す長期メモ（Memory）、よく頼む作業の手順書（スキル）。こうしたものを足していくと、毎回説明しなくても話が通じるようになる。
