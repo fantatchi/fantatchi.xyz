@@ -48,3 +48,9 @@
 }
 .paginav a { padding-block: 10px; }
 .paginav .title { font-size: 12px; }
+
+/* 目次。本文の外なので PaperMod の body 既定 18px のままだった */
+.toc {
+  font-size: 15px;
+  line-height: 1.8;
+}
