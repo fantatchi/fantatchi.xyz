@@ -68,6 +68,8 @@ def build_payload(path, fm, body, public):
         sys.exit("タグが 1 つもありません（Qiita はタグ必須）")
 
     url = f"{base_url()}posts/{path.parent.name}/"
+    # ブログ内の相対リンク（](/posts/...)）は Qiita では切れるので絶対 URL にする
+    body = re.sub(r"\]\(/(?!/)", f"]({base_url()}", body)
     head = f"> この記事は個人ブログ [fantatchi's notes]({url}) からの転載です。\n\n"
     tail = f"\n\n---\n\n初出: [fantatchi's notes]({url})。ほかの記事もブログに置いています。\n"
     return {
@@ -109,9 +111,12 @@ def main():
     fm, body = split_frontmatter(text)
     payload = build_payload(args.path, fm, body, args.public)
     item_id = fm_value(fm, "qiita_id")
+    if item_id and not args.public:
+        # 更新時は公開範囲を変えない（公開済みの記事を誤って限定共有へ戻さない）
+        del payload["private"]
 
     if args.dry_run:
-        print(f"{'PATCH ' + item_id if item_id else 'POST（新規）'} / private={payload['private']}", file=sys.stderr)
+        print(f"{'PATCH ' + item_id if item_id else 'POST（新規）'} / private={payload.get('private', '変更しない')}", file=sys.stderr)
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return
 
