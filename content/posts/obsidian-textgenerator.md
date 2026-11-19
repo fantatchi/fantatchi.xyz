@@ -2,7 +2,7 @@
 date = '2025-10-22T17:20:11+09:00'
 title = 'Obsidian で内部リンクを自動化する方法（Text Generator × OpenAI API）'
 categories = ["tech"]
-tags = ["Obsidian", "Text Generator", "OpenAI API"]
+tags = ["obsidian", "text-generator", "openai-api"]
 draft = false
 +++
 

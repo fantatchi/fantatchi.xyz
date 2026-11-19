@@ -2,7 +2,7 @@
 title: "画像生成まで含むWebデザインで感じたClaude CodeとCodexの違い"
 date: 2026-09-01
 draft: false
-tags: ["Claude Code", "Codex", "AIコーディング", "Webデザイン", "画像生成"]
+tags: ["claude-code", "codex", "ai-coding", "web-design", "image-generation"]
 categories: ["opinion"]
 ---
 

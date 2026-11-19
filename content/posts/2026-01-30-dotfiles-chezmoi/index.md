@@ -2,7 +2,7 @@
 title: "dotfiles管理を独自スクリプトからchezmoiに移行した"
 date: 2026-01-30
 draft: false
-tags: ["dotfiles", "chezmoi", "WSL"]
+tags: ["dotfiles", "chezmoi", "wsl"]
 ---
 
 ## dotfiles とは
