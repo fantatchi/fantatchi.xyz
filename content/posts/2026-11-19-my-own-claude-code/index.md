@@ -5,6 +5,7 @@ draft: false
 tags: ["claude-code", "claude-md", "hooks", "skills", "dotfiles"]
 categories: ["devtools"]
 qiita_tags: ["ClaudeCode", "Claude", "生成AI", "AIエージェント", "chezmoi"]
+qiita_id: "abe2abe269ca29f3a36f"
 ---
 
 前回の記事「[Claude Code を陳腐化させないためにやっていること](/posts/2026-11-19-keeping-claude-code-fresh/)」の最後に、環境の組み方は反響があれば別の記事で書く、と書いた。反響があったかどうかは、ここでは問わないことにする。問うと書けなくなるからだ。
