@@ -12,3 +12,4 @@ Hugo + PaperMod テーマのブログサイト。
 
 - `hugo server -D` — ローカルプレビュー（http://localhost:1313/）
 - `git push origin main` — デプロイ
+- `python3 scripts/qiita_post.py <index.md>` — Qiita へ転載（新規は限定共有、`--public` で公開、`--dry-run` で確認。要 `QIITA_TOKEN`。投稿後 `qiita_id` が frontmatter に入る）
