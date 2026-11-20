@@ -5,6 +5,7 @@ draft: false
 tags: ["claude-code", "claude-md", "memory", "skills", "maintenance"]
 categories: ["devtools"]
 qiita_tags: ["ClaudeCode", "Claude", "AI", "生成AI", "AIエージェント"]
+qiita_id: "83f74536f17bee4442d8"
 ---
 
 「[Claude Code を陳腐化させないためにやっていること](/posts/2026-11-19-keeping-claude-code-fresh/)」では、育てた設定を週 1 回点検していると書いた。ただ、そこで書いたのは何を点検しているかの一覧だけだった。この記事はその具体編で、点検で実際に何が見つかり、それを受けて仕組みをどう変えたかを書く。
