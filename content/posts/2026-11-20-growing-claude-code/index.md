@@ -4,6 +4,8 @@ date: 2026-11-20T13:25:00+09:00
 draft: false
 tags: ["claude-code", "claude-md", "memory", "skills", "hooks"]
 categories: ["devtools"]
+qiita_tags: ["ClaudeCode", "Claude", "生成AI", "AIエージェント", "chezmoi"]
+qiita_id: "d51a206075dabd147a8f"
 ---
 
 Claude Code は、そのままでも使える。ただ、使い込むうちに、CLAUDE.md を書き、スキルを登録し、フックを足していくことになる。こうして本体の周りに足したもの一式を、この記事ではハーネスと呼ぶ。
