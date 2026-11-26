@@ -55,10 +55,9 @@
   line-height: 1.8;
 }
 
-/* 本文の禁則を厳しくし（小書きのかな・長音を行頭に送らない）、長い URL やパスのはみ出しを防ぐ。
-   word-break: break-all は日本語の禁則まで外れるので使わない */
+/* 長い URL やパスのはみ出しを防ぐ。word-break: break-all は日本語の禁則まで外れるので使わない。
+   line-break: strict は行末の余白が増えて読みにくかったので入れない */
 .post-content {
-  line-break: strict;
   overflow-wrap: anywhere;
 }
 
