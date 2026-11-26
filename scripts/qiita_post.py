@@ -72,8 +72,8 @@ def build_payload(path, fm, body, public):
     body = re.sub(r"\]\(/(?!/)", f"]({base_url()}", body)
     # Page Bundle 内の画像（](architecture.svg)）も切れるので記事 URL 起点の絶対 URL にする
     body = re.sub(r"\]\((?![a-zA-Z][\w+.-]*:|/|#)", f"]({url}", body)
-    head = f"> この記事は個人ブログ [fantatchi's notes]({url}) からの転載です。\n\n"
-    tail = f"\n\n---\n\n初出: [fantatchi's notes]({url})。ほかの記事もブログに置いています。\n"
+    head = f"> この記事は個人ブログ [The Fantatchi Code]({url}) からの転載です。\n\n"
+    tail = f"\n\n---\n\n初出: [The Fantatchi Code]({url})。ほかの記事もブログに置いています。\n"
     return {
         "title": title,
         "body": head + body.strip("\n") + tail,

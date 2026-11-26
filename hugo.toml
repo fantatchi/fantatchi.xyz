@@ -1,5 +1,5 @@
 baseURL = "https://fantatchi-xyz.pages.dev/"
-title = "fantatchi's notes"
+title = "The Fantatchi Code"
 theme = "PaperMod"
 languageCode = "ja"
 defaultContentLanguage = "ja"
@@ -29,7 +29,7 @@ capitalizeListTitles = false
   ShareButtons = ["x","facebook","linkedin"]
 
   [params.homeInfoParams]
-    Title = "fantatchi's notes"
+    Title = "The Fantatchi Code"
     Content = "日常スケッチ - 日々の小さな気づきから"
     imageUrl = "/images/avatar.png"
     imageTitle = "avatar"
