@@ -30,9 +30,11 @@
 }
 
 /* ヘッダー */
+/* サイト名: 文字列（hugo.toml の title）は変えず、表示だけ大文字にする */
 .logo a {
   font-size: 18px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 #menu a { font-size: 15px; }
 #menu a:hover { color: var(--accent); }
@@ -45,6 +47,10 @@
 .first-entry {
   min-height: auto;
   margin: calc(var(--gap) * 2) 0 0;
+}
+/* サイト名（home-info の見出し）: ヘッダーのロゴと同じく表示だけ大文字にする */
+.first-entry.home-info .entry-header h1 {
+  text-transform: uppercase;
 }
 
 /* 記事一覧: カードをやめて下罫線で区切るリストに */
