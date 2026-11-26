@@ -54,3 +54,20 @@
   font-size: 15px;
   line-height: 1.8;
 }
+
+/* 本文の禁則を厳しくし（小書きのかな・長音を行頭に送らない）、長い URL やパスのはみ出しを防ぐ。
+   word-break: break-all は日本語の禁則まで外れるので使わない */
+.post-content {
+  line-break: strict;
+  overflow-wrap: anywhere;
+}
+
+/* タイトルと記事内見出しは行の長さを揃え、文節で折り返す（auto-phrase は lang="ja" が前提。Chrome のみ、他は無視される）。
+   本文に当てると行末がガタつくので見出しだけ */
+.post-title,
+.page-header h1,
+.entry-header h2,
+.post-content :is(h2, h3, h4) {
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
