@@ -70,6 +70,8 @@ def build_payload(path, fm, body, public):
     url = f"{base_url()}posts/{path.parent.name}/"
     # ブログ内の相対リンク（](/posts/...)）は Qiita では切れるので絶対 URL にする
     body = re.sub(r"\]\(/(?!/)", f"]({base_url()}", body)
+    # Page Bundle 内の画像（](architecture.svg)）も切れるので記事 URL 起点の絶対 URL にする
+    body = re.sub(r"\]\((?![a-zA-Z][\w+.-]*:|/|#)", f"]({url}", body)
     head = f"> この記事は個人ブログ [fantatchi's notes]({url}) からの転載です。\n\n"
     tail = f"\n\n---\n\n初出: [fantatchi's notes]({url})。ほかの記事もブログに置いています。\n"
     return {

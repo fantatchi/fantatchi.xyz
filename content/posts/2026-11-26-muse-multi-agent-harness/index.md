@@ -4,6 +4,7 @@ date: 2026-11-26
 draft: false
 tags: ["muse", "claude-code", "codex", "antigravity", "tailscale", "wsl"]
 categories: ["devtools"]
+qiita_id: "49413a5a435e25d08025"
 ---
 
 外出先からスマホで「この記事の初稿を作っておいて」と投げると、自宅の PC で AI agent が動き出す。そういう構成を 2 日かけて作った。間に立つのは、スマホと Web から使えるクラウド上の AI エージェント Muse で、Muse は自宅 PC に入って、Claude Code・Codex・agy（Google の Antigravity CLI）のうち作業に合う 1 つを選んで動かす。3 つは同じ作業メモを読み書きするので、Claude Code が途中まで進めた作業を Codex が引き取って続ける、といったリレーもできる。
